@@ -1,29 +1,55 @@
-# JupyterLite Demo
+Tutoriel
+Utilisation de Jupyterlite
+Fialaire David 2023.
 
-[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/demo)
+I.	Créer une Github Page Jupyterlite :
+( = un Site / Dashboard Notebooks en ligne )
+A.	Initialisation :
+1.	Se connecter à votre compte Github,
+2.	Ouvrir, dans un autre onglet, ce lien : https://github.com/jupyterlite/demo
+3.	Cliquer sur le bouton : Use this template  Create a new repository
+ 
+4.	Renseigner : - Nom du repository, et cliquer sur : Create.
+5.	Dans le Menu Horizontal : cliquer sur : Setting
+a.	Dans le menu latéral : cliquer sur Pages
+i.	Dans la section : Build and deployment / Source :
+Transformer : Deploy from a branch  GitHub Actions
+6.	Dans le Menu Horizontal : cliquer sur : Actions
+	Vous observez des commits (Initial commits) en rouge : cliquer sur le 1er,
+o	En haut à droite, cliquer sur : Re-Run jobs :
+	Re-Run failled jobs  Re-run jobs
+•	Attendre qu’il passe au vert..
+7.	Dans le Menu Horizontal : cliquer sur Code
+a.	Cliquer sur le dossier content,
+i.	Cliquer sur Add File  Upload File :
+1.	Déposer un/plusieurs notebooks, …des fichiers annexes..
+	N’oubliez pas de commiter (en bas)
+8.	Retourner dans le Menu Horizontal/Actions
+a.	Suivez le Build/deployment de votre commit (il doit passer au vert)
+9.	Dans le Menu Horizontal : cliquer sur : Setting
+a.	Dans le menu latéral : cliquer sur Pages
+ Vous observez le lien de votre Github Page Jupyterlite !
 
-JupyterLite deployed as a static site to GitHub Pages, for demo purposes.
 
-## ✨ Try it in your browser ✨
 
-➡️ **https://jupyterlite.github.io/demo**
 
-![github-pages](https://user-images.githubusercontent.com/591645/120649478-18258400-c47d-11eb-80e5-185e52ff2702.gif)
+B.	Travail sur les bibliothèques nécessaires à vos Notebooks :
+1.	Dans le Menu Horizontal : cliquer sur : Code,
+a.	Cliquer sur :  requirement.txt,
+i.	Et cliquer à droite sur le crayon (pour éditer) :
+•	Si le module dont vous avez besoin n’est pas dans cette liste, rajoutez-le ;
+	N’oubliez pas de Commiter et de suivre le bon deployment dans Actions.
+•	Si le module dont vous avez besoin est déjà dans cette liste et que votre notebook ne fonctionne pas dans Github Page jupyterlite..
+ Dans votre notebook, avant la cellule de code d’import :
+import XXXX
 
-## Requirements
+créer une nouvelle cellule de code :
+%pip install -q XXXX
 
-JupyterLite is being tested against modern web browsers:
+Remarque 1 : L’utilisateur du Notebook sera donc amené à initialement « installer » (dans le navigateur Web uniquement !) le package qui posait un problème en activant la cellule : %pip install -q XXXX.
 
-- Firefox 90+
-- Chromium 89+
+Remarque 2 : vous avez 2 possibilités pour modifier votre Notebook :
+a)	Soit vous le modifier localement avec votre éditeur préferré, puis vous l’uploadez dans le repository/content ; vous Commitez et suivez le bon deployment.
+b)	Soit vous l’éditez avec l’éditeur en ligne de Notebooks de Github : 
+	Commencez par ouvrir votre Notebook à partir de votre repository/content ; puis cliquez sur la flèche, à droite du crayon, sur Open in GitHub Dev ; Dès lors, faîtes vos modif ; Pour Commiter, il vous suffit de faire Ctrl m, vous écrivez un commentaire de commit, puis vous faîtes Ctrl Entrée ; N’oubliez pas de suivre le bon deployment dans Actions.
 
-## Deploy your JupyterLite website on GitHub Pages
-
-Check out the guide on the JupyterLite documentation: https://jupyterlite.readthedocs.io/en/latest/quickstart/deploy.html
-
-## Further Information and Updates
-
-For more info, keep an eye on the JupyterLite documentation:
-
-- How-to Guides: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
-- Reference: https://jupyterlite.readthedocs.io/en/latest/reference/index.html

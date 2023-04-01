@@ -1,3 +1,4 @@
+
 Tutoriel
 Utilisation de Jupyterlite
 Fialaire David 2023.
@@ -8,7 +9,7 @@ A.	Initialisation :
 1.	Se connecter à votre compte Github,
 2.	Ouvrir, dans un autre onglet, ce lien : https://github.com/jupyterlite/demo
 3.	Cliquer sur le bouton : Use this template  Create a new repository
- 
+<img src="Image1.jpg">
 4.	Renseigner : - Nom du repository, et cliquer sur : Create.
 5.	Dans le Menu Horizontal : cliquer sur : Setting
 a.	Dans le menu latéral : cliquer sur Pages

@@ -37,7 +37,6 @@ ipyevents>=2.0.1
 folium
 ipyleaflet
 ipywebrtc
-tkinter
 # Python: interative Matplotlib library for Jupyter notebooks (optional)
 ipympl>=0.8.2
 # Python: ipycanvas library for Jupyter notebooks (optional)
